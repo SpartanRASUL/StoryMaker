@@ -13,6 +13,12 @@
 		E32CC89625D816B400606630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32CC89425D816B400606630 /* Main.storyboard */; };
 		E32CC89825D816B500606630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32CC89725D816B500606630 /* Assets.xcassets */; };
 		E32CC89B25D816B500606630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32CC89925D816B500606630 /* LaunchScreen.storyboard */; };
+		E32CC8B025D816C600606630 /* RenderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8A425D816C600606630 /* RenderConfig.swift */; };
+		E32CC8B125D816C600606630 /* ImagePassthroughRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8A725D816C600606630 /* ImagePassthroughRenderable.swift */; };
+		E32CC8B325D816C600606630 /* image_passthrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8A925D816C600606630 /* image_passthrough.metal */; };
+		E32CC8B525D816C600606630 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AC25D816C600606630 /* Easing.swift */; };
+		E32CC8B625D816C600606630 /* TextureVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AE25D816C600606630 /* TextureVertex.swift */; };
+		E32CC8B725D816C600606630 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AF25D816C600606630 /* Renderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,13 @@
 		E32CC89725D816B500606630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32CC89A25D816B500606630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32CC89C25D816B500606630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E32CC8A425D816C600606630 /* RenderConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderConfig.swift; sourceTree = "<group>"; };
+		E32CC8A725D816C600606630 /* ImagePassthroughRenderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePassthroughRenderable.swift; sourceTree = "<group>"; };
+		E32CC8A925D816C600606630 /* image_passthrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = image_passthrough.metal; sourceTree = "<group>"; };
+		E32CC8AC25D816C600606630 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		E32CC8AD25D816C600606630 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		E32CC8AE25D816C600606630 /* TextureVertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureVertex.swift; sourceTree = "<group>"; };
+		E32CC8AF25D816C600606630 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 		E32CC88D25D816B400606630 /* MetalEditor */ = {
 			isa = PBXGroup;
 			children = (
+				E32CC8A325D816C600606630 /* Rendering */,
 				E32CC88E25D816B400606630 /* AppDelegate.swift */,
 				E32CC89025D816B400606630 /* SceneDelegate.swift */,
 				E32CC89225D816B400606630 /* ViewController.swift */,
@@ -65,6 +79,44 @@
 				E32CC89C25D816B500606630 /* Info.plist */,
 			);
 			path = MetalEditor;
+			sourceTree = "<group>";
+		};
+		E32CC8A325D816C600606630 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				E32CC8A425D816C600606630 /* RenderConfig.swift */,
+				E32CC8A525D816C600606630 /* Renderables */,
+				E32CC8AB25D816C600606630 /* Common */,
+				E32CC8AF25D816C600606630 /* Renderer.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		E32CC8A525D816C600606630 /* Renderables */ = {
+			isa = PBXGroup;
+			children = (
+				E32CC8A625D816C600606630 /* ImagePassthrough */,
+			);
+			path = Renderables;
+			sourceTree = "<group>";
+		};
+		E32CC8A625D816C600606630 /* ImagePassthrough */ = {
+			isa = PBXGroup;
+			children = (
+				E32CC8A725D816C600606630 /* ImagePassthroughRenderable.swift */,
+				E32CC8A925D816C600606630 /* image_passthrough.metal */,
+			);
+			path = ImagePassthrough;
+			sourceTree = "<group>";
+		};
+		E32CC8AB25D816C600606630 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E32CC8AC25D816C600606630 /* Easing.swift */,
+				E32CC8AD25D816C600606630 /* Common.h */,
+				E32CC8AE25D816C600606630 /* TextureVertex.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32CC8B325D816C600606630 /* image_passthrough.metal in Sources */,
+				E32CC8B625D816C600606630 /* TextureVertex.swift in Sources */,
+				E32CC8B725D816C600606630 /* Renderer.swift in Sources */,
 				E32CC89325D816B400606630 /* ViewController.swift in Sources */,
 				E32CC88F25D816B400606630 /* AppDelegate.swift in Sources */,
+				E32CC8B525D816C600606630 /* Easing.swift in Sources */,
 				E32CC89125D816B400606630 /* SceneDelegate.swift in Sources */,
+				E32CC8B125D816C600606630 /* ImagePassthroughRenderable.swift in Sources */,
+				E32CC8B025D816C600606630 /* RenderConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
