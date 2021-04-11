@@ -16,9 +16,10 @@ typedef struct {
 } TextureVertexIn;
 
 
-vertex TextureVertex image_passthrough_vertex(const TextureVertexIn vIn [[ stage_in ]]) {
+vertex TextureVertex image_passthrough_vertex(const TextureVertexIn vIn [[ stage_in ]],
+                                              constant ModelConstants &constants [[ buffer(1) ]]) {
     TextureVertex vOut;
-    vOut.position = float4(vIn.position, 1);
+    vOut.position = constants.modelMatrix * float4(vIn.position, 1);
     vOut.textureCoordinate = vIn.textureCoordinate;
     return vOut;
 }

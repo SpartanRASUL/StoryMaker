@@ -61,6 +61,7 @@ final class ImagePassthroughRenderable: Renderable {
             print("Texture is either not set or failed to initialize")
         }
         renderEncoder?.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
+        renderEncoder?.setVertexBytes(&modelConstants, length: MemoryLayout<ModelConstants>.stride, index: 1)
 
         renderEncoder?.drawIndexedPrimitives(
             type: .triangle,
@@ -82,7 +83,7 @@ final class ImagePassthroughRenderable: Renderable {
             cgImage: cgimage,
             options: nil
         )
-
+        updateAspectRatio(with: image.size)
         self.texture = texture
     }
 
@@ -119,4 +120,18 @@ final class ImagePassthroughRenderable: Renderable {
     ]
 
     private var texture: MTLTexture?
+    private var modelConstants = ModelConstants()
+
+    private func updateAspectRatio(with size: CGSize) {
+        let heightRatio = Float(size.height/size.width)
+        let widthRatio = Float(size.width/size.height)
+
+        modelConstants.modelMatrix.scale(
+            axis: SIMD3<Float>(
+                x: widthRatio,
+                y: heightRatio,
+                z: 1
+            )
+        )
+    }
 }

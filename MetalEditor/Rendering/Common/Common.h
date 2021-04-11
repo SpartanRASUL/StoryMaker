@@ -8,7 +8,11 @@
 #include <metal_stdlib>
 using namespace metal;
 
-typedef struct {
+struct TextureVertex {
     float4 position [[position]];
     float2 textureCoordinate;
-} TextureVertex;
+};
+
+struct ModelConstants {
+    float4x4 modelMatrix;
+};

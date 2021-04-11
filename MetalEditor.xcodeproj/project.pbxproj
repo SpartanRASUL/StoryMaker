@@ -16,7 +16,7 @@
 		E32CC8B025D816C600606630 /* RenderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8A425D816C600606630 /* RenderConfig.swift */; };
 		E32CC8B125D816C600606630 /* ImagePassthroughRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8A725D816C600606630 /* ImagePassthroughRenderable.swift */; };
 		E32CC8B325D816C600606630 /* image_passthrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8A925D816C600606630 /* image_passthrough.metal */; };
-		E32CC8B525D816C600606630 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AC25D816C600606630 /* Easing.swift */; };
+		E32CC8B525D816C600606630 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AC25D816C600606630 /* Types.swift */; };
 		E32CC8B625D816C600606630 /* TextureVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AE25D816C600606630 /* TextureVertex.swift */; };
 		E32CC8B725D816C600606630 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AF25D816C600606630 /* Renderer.swift */; };
 		E3D32E9B25FCFC0500B2B19B /* matrix_float4x4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D32E9A25FCFC0500B2B19B /* matrix_float4x4.swift */; };
@@ -34,7 +34,7 @@
 		E32CC8A425D816C600606630 /* RenderConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderConfig.swift; sourceTree = "<group>"; };
 		E32CC8A725D816C600606630 /* ImagePassthroughRenderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePassthroughRenderable.swift; sourceTree = "<group>"; };
 		E32CC8A925D816C600606630 /* image_passthrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = image_passthrough.metal; sourceTree = "<group>"; };
-		E32CC8AC25D816C600606630 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		E32CC8AC25D816C600606630 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		E32CC8AD25D816C600606630 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E32CC8AE25D816C600606630 /* TextureVertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureVertex.swift; sourceTree = "<group>"; };
 		E32CC8AF25D816C600606630 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		E32CC8AB25D816C600606630 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E32CC8AC25D816C600606630 /* Easing.swift */,
+				E32CC8AC25D816C600606630 /* Types.swift */,
 				E32CC8AD25D816C600606630 /* Common.h */,
 				E32CC8AE25D816C600606630 /* TextureVertex.swift */,
 			);
@@ -206,7 +206,7 @@
 				E32CC89325D816B400606630 /* ViewController.swift in Sources */,
 				E3D32E9B25FCFC0500B2B19B /* matrix_float4x4.swift in Sources */,
 				E32CC88F25D816B400606630 /* AppDelegate.swift in Sources */,
-				E32CC8B525D816C600606630 /* Easing.swift in Sources */,
+				E32CC8B525D816C600606630 /* Types.swift in Sources */,
 				E32CC89125D816B400606630 /* SceneDelegate.swift in Sources */,
 				E32CC8B125D816C600606630 /* ImagePassthroughRenderable.swift in Sources */,
 				E32CC8B025D816C600606630 /* RenderConfig.swift in Sources */,
