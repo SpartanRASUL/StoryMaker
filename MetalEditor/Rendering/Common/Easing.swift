@@ -9,6 +9,4 @@ import Foundation
 
 enum Easing {
     case linear, easeIn, easeOut, easeInOut
-
-    
 }

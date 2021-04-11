@@ -42,7 +42,8 @@ class ViewController: UIViewController {
         }
 
         if let passthrough = ImagePassthroughRenderable(config: renderer.config) {
-            passthrough.set(image: UIImage(named: "test")!)
+            let image = UIImage(named: "test")!
+            passthrough.set(image: image)
             renderer.renderables.append(passthrough)
         }
         self.renderer = renderer

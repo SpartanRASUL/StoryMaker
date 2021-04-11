@@ -107,10 +107,10 @@ final class ImagePassthroughRenderable: Renderable {
 
          */
 
-        TextureVertex(position: SIMD3<Float>(-1, -1,  0), textureCoordinate: SIMD2<Float>( 0, 1)), //Bottom Left
-        TextureVertex(position: SIMD3<Float>(-1,  1,  0), textureCoordinate: SIMD2<Float>( 0, 0)), //Top Left
-        TextureVertex(position: SIMD3<Float>( 1,  1,  0), textureCoordinate: SIMD2<Float>( 1, 0)), //Top Right
-        TextureVertex(position: SIMD3<Float>( 1, -1,  0), textureCoordinate: SIMD2<Float>( 1, 1)), //Bottom Right
+        TextureVertex(position: SIMD3<Float>(-1, -1,  0), textureCoordinate: SIMD2<Float>(0, 1)), //Bottom Left
+        TextureVertex(position: SIMD3<Float>(-1,  1,  0), textureCoordinate: SIMD2<Float>(0, 0)), //Top Left
+        TextureVertex(position: SIMD3<Float>( 1,  1,  0), textureCoordinate: SIMD2<Float>(1, 0)), //Top Right
+        TextureVertex(position: SIMD3<Float>( 1, -1,  0), textureCoordinate: SIMD2<Float>(1, 1)), //Bottom Right
     ]
 
     private let indices: [UInt16] = [

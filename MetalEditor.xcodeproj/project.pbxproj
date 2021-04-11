@@ -19,6 +19,7 @@
 		E32CC8B525D816C600606630 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AC25D816C600606630 /* Easing.swift */; };
 		E32CC8B625D816C600606630 /* TextureVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AE25D816C600606630 /* TextureVertex.swift */; };
 		E32CC8B725D816C600606630 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CC8AF25D816C600606630 /* Renderer.swift */; };
+		E3D32E9B25FCFC0500B2B19B /* matrix_float4x4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D32E9A25FCFC0500B2B19B /* matrix_float4x4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E32CC8AD25D816C600606630 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E32CC8AE25D816C600606630 /* TextureVertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureVertex.swift; sourceTree = "<group>"; };
 		E32CC8AF25D816C600606630 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		E3D32E9A25FCFC0500B2B19B /* matrix_float4x4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrix_float4x4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		E32CC8A325D816C600606630 /* Rendering */ = {
 			isa = PBXGroup;
 			children = (
+				E3D32E9925FCFBEC00B2B19B /* Extensions */,
 				E32CC8A425D816C600606630 /* RenderConfig.swift */,
 				E32CC8A525D816C600606630 /* Renderables */,
 				E32CC8AB25D816C600606630 /* Common */,
@@ -117,6 +120,14 @@
 				E32CC8AE25D816C600606630 /* TextureVertex.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E3D32E9925FCFBEC00B2B19B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3D32E9A25FCFC0500B2B19B /* matrix_float4x4.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 				E32CC8B625D816C600606630 /* TextureVertex.swift in Sources */,
 				E32CC8B725D816C600606630 /* Renderer.swift in Sources */,
 				E32CC89325D816B400606630 /* ViewController.swift in Sources */,
+				E3D32E9B25FCFC0500B2B19B /* matrix_float4x4.swift in Sources */,
 				E32CC88F25D816B400606630 /* AppDelegate.swift in Sources */,
 				E32CC8B525D816C600606630 /* Easing.swift in Sources */,
 				E32CC89125D816B400606630 /* SceneDelegate.swift in Sources */,
